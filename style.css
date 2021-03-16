@@ -1,0 +1,204 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+.container {
+    max-width: 1170px;
+    position: relative;
+}
+.top_header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #F6F6F6
+}
+.top_header_left{
+    margin-left: 0em;
+}
+.top_header_right {
+    margin-right: 0em;
+}
+.navv {
+    text-decoration: none;
+    padding: 0 15px 0 0;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    opacity: 1;
+    color: #7E7E7E;
+}
+.d1 {
+    padding-top: 20px;
+    position: absolute;
+    right: 0px;
+}
+form {
+    display: flex;
+    width: 200px;
+}
+.d1 input {
+    padding-left: 10px;
+    border: 2px solid #E1E1E1;
+    outline: none;
+}
+.d1 button {
+  width: 42px;
+  height: 42px;
+  cursor: pointer;
+}
+.d1 button:before {
+  content: "\f002";
+  font-family: FontAwesome;
+  font-size: 16px;
+}
+.header_footer {
+    display: flex;
+    padding-top: 72px;
+}
+.menu {
+    margin-right: 0;
+    margin-top: 25px;
+}
+.menu_text {
+    text-decoration: none;
+    padding: 0 15px 0 0;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+    opacity: 1;
+    color: #3D3D3D;
+}
+.logo {
+    margin-left: 0;
+}
+main {
+    width: 1920px;
+    height: 1070px;
+    background-image:url(https://pbs.twimg.com/media/EB_MCy-WsAAcGQH.jpg:large);
+    background-repeat: no-repeat;
+    
+}
+/* Слайдер 1: */
+.slider{
+    max-width: 90%;
+    /* Положение элемента устанавливается относительно его исходной позиции: */
+    position: relative;
+    /* Центрируем по горизонтали: */
+    margin: auto;
+    height: 1070px;
+    width: 1920px;
+}
+
+/* Картинка масштабируется по отношению к родительскому элементу: */
+.slider .item img {
+    /* Элемент меняет размер так, чтобы заполнить блок и сохранить пропорции: */
+    object-fit: cover;
+    width: 100%;
+    height: 1070px;
+}
+
+/* Кнопки назад и вперёд: */
+.slider .previous, .slider .next {
+    /* Добавляет курсору иконку, когда тот оказывается над кнопкой: */
+    cursor: pointer;
+    /* Положение элемента задаётся относительно границ браузера: */
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    /* Оформление самих кнопок: */
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    /* Плавное появление фона при наведении курсора: */
+    transition: 0.6s ease;
+    /* Скругление границ: */
+    border-radius: 0 3px 3px 0;
+}
+.slider .next {
+    padding-left: 1900px;
+    border-radius: 3px 0 0 3px;
+    z-index: 999999;
+}
+
+/* При наведении курсора на кнопки добавляем фон кнопок: */
+.slider .previous:hover,
+.slider .next:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 999999;
+}
+
+/* Анимация слайдов: */
+.slider .item {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@keyframes fade {
+    /* Устанавливаем и изменяем степень прозрачности: */
+    from {
+        opacity: 0.4
+    }
+    to {
+        opacity: 1
+    }
+}
+.slider_container {
+    max-width: 1920px;
+    height: 1070px;
+}
+.slider_text {
+    position: relative;
+    bottom: 800px;
+    padding-left: 1100px;
+}
+h3 {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 30px;
+}
+h1 {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 100px;
+    color: white;
+}
+h2 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 35px;
+    color: #4C4C4C;
+}
+.p_slider_text {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 15px;
+    padding-top: 29px;
+}
+.block_images {
+    padding-bottom: 61px;
+}
+.images_columns {
+    display: flex;
+}
+.images_column {
+    padding: 29px 29px 0px 0;
+}
+.top_block {
+    display: flex;
+}
+.images_column_top {
+    padding-top: 70px;
+    max-height: 430px;
+}
+.images_column_2 {
+    padding-top: 70px;
+}
+.text_block_1 {
+    position: relative;
+    bottom: 240px;
+    padding-left: 280px;
+}
+.text_block_top {
+    font-family: 'Cousine', monospace;
+    font-size: 40px;
+    color: #FFFFFF;
+}
+.text_block_top_2{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 25px;
+    color: #FFFFFF;
+}
